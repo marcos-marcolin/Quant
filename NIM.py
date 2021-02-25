@@ -2,31 +2,7 @@ tipo_jogo = 0
 global partida
 global campeonato
 
-while tipo_jogo==0:
-    
-    print("")
-    print("Bem vindo ao NIM! Escolha dua opção: ")
-    print (" ")
-    print("1 - Para uma partida isolada")
-    print("2 - Para jogar campeonato")
-    
-    tipo_jogo = int(input("Sua opção: "))
-    print (" ")
-    
-    if tipo_jogo == 1:
-        print("Você escolheu a partida isolada!")
-        partida()
-        break
-    
-    elif tipo_jogo == 2:
-        print("Você escolheu um campeonato!")
-        campeonato()
-        break
 
-    else:
-        print("Opção Inválida")
-        tipo_jogo=0
-            
 def partida():
     
     print("")
@@ -96,8 +72,30 @@ def campeonato():
         else:
             computador = computador +1
     print("Placar final: você {} x {} Computador". format(usuario, computador))
-        
 
-                
-                
+
+while tipo_jogo==0:
     
+    print("")
+    print("Bem vindo ao NIM! Escolha dua opção: ")
+    print (" ")
+    print("1 - Para uma partida isolada")
+    print("2 - Para jogar campeonato")
+    
+    tipo_jogo = int(input("Sua opção: "))
+    print (" ")
+    
+    if tipo_jogo == 1:
+        print("Você escolheu a partida isolada!")
+        partida()
+        break
+    
+    elif tipo_jogo == 2:
+        print("Você escolheu um campeonato!")
+        campeonato()
+        break
+
+    else:
+        print("Opção Inválida")
+        tipo_jogo=0
+  
